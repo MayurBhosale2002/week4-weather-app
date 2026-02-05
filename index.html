@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather pro</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Weather-icons.css" />
+    <link rel="stylesheet" href="css/respnsive.css" />
+</head>
+
+<body>
+
+    <div class="app-logo" onclick="location.reload()">
+        <img src="assets/images/logo.png" alt="Weather Pro Logo" />
+        <span>Weather Pro</span>
+    </div>
+
+
+
+    <div class="app">
+
+        <header class="header">
+            <div class="card-logo">
+                <img src="assets/images/logo.png" alt="Weather Pro Logo" />
+            </div>
+
+            <h1>Weather Pro</h1>
+            <p>Real-Time Weather Dashboard</p>
+
+            <button id="themeBtn">🌙</button>
+
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search city..." autocomplete="off" />
+
+            <button id="searchBtn">🔍</button>
+            <button id="unitToggle">°F</button>
+            <button id="locBtn">📍</button>
+
+        </div>
+
+        <div id="loading" class="loading hidden">Loading...</div>
+        <div id="error" class="error hidden"></div>
+
+        <section id="currentWeather" class="card"></section>
+
+        <section id="forecast" class="forecast"></section>
+        <section id="favorites" class="card favorites">
+            <h3>⭐ Favorite Cities</h3>
+            <div id="favList"></div>
+        </section>
+
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
