@@ -1,6 +1,6 @@
 # Week 4 Weather Application
 
-Name: Mayur Bhosale    
+Name: Mayur Bhosale  
 
 ## Description
 A responsive weather application that displays real-time
